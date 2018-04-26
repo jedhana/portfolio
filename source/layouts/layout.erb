@@ -5,13 +5,25 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
+     <!-- Hey, source code investigator!
+  This website is created by
+        _  ______  ______   _    _        _    _
+       | ||  ____||  __  \ | |  | |  /\  | \  | |  /\
+       | || |__   | |  |  || |__| | /  \ |  \ | | /  \
+   _   | ||  __|  | |  |  ||  __  |/ /\ \|   \| |/ /\ \
+  | \__| || |____ | |__|  || |  | / ____ \ |\   / ____ \
+  |______||______||______/ |_|  |/_/    \_\| \_/_/    \_\
+
+   Cheers, hope you enjoy !-->
     <title><%= current_page.data.title %></title>
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/favicon.png' %>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   </head>
   <body>
+
     <%= yield %>
+
   </body>
 </html>
