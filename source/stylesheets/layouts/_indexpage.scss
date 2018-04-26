@@ -1,8 +1,8 @@
 /*GENERAL*/
 body {
   background: url("images/giphy.gif") no-repeat;
-  background-size: cover;
-  background-position: 0px;
+
+
   background-color: black;
   font-family: helvetica neue;
   font-weight: lighter !important;
@@ -38,6 +38,8 @@ li:hover ul {
 
 /*SEPARATION OF PAGE BELOW*/
 .pagess {
+  background-size: cover;
+  background-position: 0px;
   display: flex;
   padding: 0px;
   margin: 0px;

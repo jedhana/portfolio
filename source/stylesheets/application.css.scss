@@ -12,3 +12,19 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+
+body {
+  background: url("images/giphy.gif") no-repeat;
+  background-color: black;
+  font-family: helvetica neue;
+  font-weight: lighter !important;
+  color: white;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+  color: rgba(255,255,255,.65);
+  &:hover{
+    color: rgba(255,255,255,.95);
+  }
+}
