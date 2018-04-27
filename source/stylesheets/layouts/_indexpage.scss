@@ -17,13 +17,14 @@ li:hover ul {
   transition: 0.5s;
 }
 
-/*SEPARATION OF PAGE BELOW*/
+/*SEPARATION OF PAGE BELOW  --> TO DO change to GRID layout*/
 .pagess {
   background-size: cover;
   background-position: 0px;
   display: flex;
   padding: 0px;
   margin: 0px;
+
   .pageleft{
   flex: 0 0 50%;
   height: 100vh;
@@ -31,6 +32,7 @@ li:hover ul {
   margin: 0px;
   position: relative;
   }
+
   .pageright {
     flex: 0 0 42.5%;
     border-right: 1px solid rgba(255,255,255,.45);
@@ -38,6 +40,7 @@ li:hover ul {
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 1fr;
   }
+
   .pageextremeright {
     flex: 0 1 7.5%;
     position: relative;
