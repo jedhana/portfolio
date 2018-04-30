@@ -1,0 +1,109 @@
+<style>
+* {
+  box-sizing:border-box;
+}
+
+.left {
+  float:left;
+  width:50%; /* The width is 20%, by default */
+  border-right: 1px solid rgba(255,255,255,.45);
+  height: 100vh;
+  text-align: center;
+}
+
+.main {
+  float:left;
+  width:42%; /* The width is 60%, by default */
+  border-right: 1px solid rgba(255,255,255,.45);
+  height: 100vh;
+  text-align: center;
+  display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 1fr;
+}
+
+.right {
+  float:left;
+  width:8%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 900px) {
+  .left, .main{
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    height: 50vh;
+    border-bottom: 1px solid rgba(255,255,255,.45);
+    border-right: none;
+    border-left: none;
+    text-align: left;
+  }
+}
+.upleft {
+  grid-row: 1 / span 1;
+  grid-column: 1 /span 1;
+  border-bottom: 1px solid rgba(255,255,255,.45);
+  border-right: 1px solid rgba(255,255,255,.45);
+  position: relative;
+  padding: 0px;
+  color: rgba(255,255,255,.65);
+  font-size: 0.8em;
+  letter-spacing: 5px;
+}
+.upright{
+  grid-row: 1 / span 1;
+  grid-column: 2 /span 1;
+  border-bottom: 1px solid rgba(255,255,255,.45);
+  position: relative;
+  padding: 0px;
+  color: rgba(255,255,255,.65);
+  font-size: 0.8em;
+  letter-spacing: 5px;
+}
+.botleft{
+  grid-row: 2 / span 1;
+  grid-column: 1 /span 1;
+  border-right: 1px solid rgba(255,255,255,.45);
+  position: relative;
+  padding: 0px;
+  color: rgba(255,255,255,.65);
+  font-size: 0.8em;
+  letter-spacing: 5px;
+}
+.botright{
+  grid-row: 2 / span 1;
+  grid-column: 2 /span 1;
+  position: relative;
+  padding: 0px;
+  color: rgba(255,255,255,.65);
+  font-size: 0.8em;
+  letter-spacing: 5px;
+}
+@media screen and (max-width: 400px) {
+  .upleft, .upright, .botleft, .botright{
+
+    border-bottom: 1px solid rgba(255,255,255,.45);
+    border-right: none;
+    border-left: none;
+    text-align: left;
+  }
+}
+
+</style>
+<div id="wrapperr">
+  <div class="left">JEDHANA</div>
+  <div class="main">
+    <div class="upleft">
+      <p>Archi</p>
+    </div>
+    <div class="upright">
+      <p>Coding</p>
+    </div>
+    <div class="botleft">
+      <p>Design</p>
+    </div>
+    <div class="botright">
+      <p>Social Medias</p>
+    </div>
+  </div>
+  <div class="right hidden-sm">menu</div>
+</div>
