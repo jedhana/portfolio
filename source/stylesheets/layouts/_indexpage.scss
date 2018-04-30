@@ -26,7 +26,7 @@ li:hover ul {
   margin: 0px;
 
   .pageleft{
-  flex: 0 0 50%;
+  width: 50%;
   height: 100vh;
   padding: 0px;
   margin: 0px;
@@ -34,7 +34,7 @@ li:hover ul {
   }
 
   .pageright {
-    flex: 0 0 42.5%;
+    width: 42.5%;
     border-right: 1px solid rgba(255,255,255,.45);
     display: grid;
     grid-template-rows: 50% 50%;
@@ -42,7 +42,7 @@ li:hover ul {
   }
 
   .pageextremeright {
-    flex: 0 1 7.5%;
+    width: 7.5%;
     position: relative;
     p {
     font-size: 0.7em;
