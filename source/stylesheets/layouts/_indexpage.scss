@@ -250,10 +250,10 @@ li:hover ul {
     grid-row: 4 / span 1;
     grid-column: 1 /span 1;
     .icons {
-      bottom: 40%;
-      left: 10%;
+      bottom: 35%;
+      left: 25%;
     }
-    border-bottom: none;
+    border-bottom: none !important;
   }
 }
 /*ICONS*/
