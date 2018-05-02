@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Hey, source code investigator!
+  This website is created by
+        _  ______  ______   _    _        _    _
+       | ||  ____||  __  \ | |  | |  /\  | \  | |  /\
+       | || |__   | |  |  || |__| | /  \ |  \ | | /  \
+   _   | ||  __|  | |  |  ||  __  |/ /\ \|   \| |/ /\ \
+  | \__| || |____ | |__|  || |  | / ____ \ |\   / ____ \
+  |______||______||______/ |_|  |/_/    \_\| \_/_/    \_\
+
+   Cheers, hope you enjoy !-->
+    <title></title>
+    <link href="stylesheets/application-f5937ae8.css" rel="stylesheet" />
+    <script src="javascripts/application-5f58cacd.js"></script>
+    <link href="images/jdlogo-af4a5bd2.png" rel="icon" type="image/png" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </head>
+  <body>
+
+    <style>
+* {
+  box-sizing:border-box;
+}
+.left {
+  float:left;
+  width:50%; /* The width is 20%, by default */
+  border-right: 1px solid rgba(255,255,255,.45);
+  height: 100vh;
+  text-align: bottom;
+}
+.main {
+  float:left;
+  width:42%; /* The width is 60%, by default */
+  border-right: 1px solid rgba(255,255,255,.45);
+  height: 100vh;
+  text-align: center;
+  display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 1fr;
+}
+.right {
+  float:left;
+  width:8%; /* The width is 20%, by default */
+}
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 1100px) {
+  .left, .main{
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    height: 50vh;
+    border-bottom: 1px solid rgba(255,255,255,.45);
+    border-right: none;
+    border-left: none;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main{
+    grid-template-rows: 25% 25% 1fr 1fr;
+    grid-template-columns: 100%;
+    border-bottom: none !important;
+  }
+  .upleft, .upright, .botleft, .botright{
+    border-bottom: 1px solid rgba(255,255,255,.45);
+    border-right: none !important;
+    border-left: none !important;
+    text-align: left;
+  }
+}
+
+.upleft {
+  grid-row: 1 / span 1;
+  grid-column: 1 /span 1;
+  border-bottom: 1px solid rgba(255,255,255,.45);
+  border-right: 1px solid rgba(255,255,255,.45);
+  position: relative;
+  padding: 10px;
+  color: rgba(255,255,255,.65);
+  font-size: 0.8em;
+  letter-spacing: 5px;
+}
+.upleft:hover {
+  border: 1px solid rgba(255,255,255,.95);
+  background-color: rgba(10,10,200,.1);
+}
+
+.upright{
+  grid-row: 1 / span 1;
+  grid-column: 2 /span 1;
+  border-bottom: 1px solid rgba(255,255,255,.45);
+  position: relative;
+  padding: 10px;
+  color: rgba(255,255,255,.65);
+  font-size: 0.8em;
+  letter-spacing: 5px;
+}
+.upright:hover {
+  border: 1px solid rgba(255,255,255,.95);
+  background-color: rgba(10,10,200,.1);
+}
+.botleft{
+  grid-row: 2 / span 1;
+  grid-column: 1 /span 1;
+  border-right: 1px solid rgba(255,255,255,.45);
+  position: relative;
+  padding: 10px;
+  color: rgba(255,255,255,.65);
+  font-size: 0.8em;
+  letter-spacing: 5px;
+}
+.botleft:hover {
+  border: 1px solid rgba(255,255,255,.95);
+  background-color: rgba(10,10,200,.1);
+}
+.botright{
+  grid-row: 2 / span 1;
+  grid-column: 2 /span 1;
+  position: relative;
+  padding: 10px;
+  color: rgba(255,255,255,.65);
+  font-size: 0.8em;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .botleft{
+    grid-row: 3 / span 1;
+    grid-column: 1 /span 1;
+  }
+  .botright{
+    grid-row: 4 / span 1;
+    grid-column: 1 /span 1;
+    border-bottom: none;
+  }
+  .upright{
+    grid-row: 2 / span 1;
+    grid-column: 1 /span 1;
+  }
+  .upleft{
+    grid-row: 1 / span 1;
+    grid-column: 1 /span 1;
+  }
+}
+
+</style>
+<div id="wrapperr">
+  <div class="left">JEDHANA</div>
+  <div class="main">
+    <div class="upleft">
+      <p>Archi</p>
+    </div>
+    <div class="upright">
+      <p>Coding</p>
+    </div>
+    <div class="botleft">
+      <p>Design</p>
+    </div>
+    <div class="botright">
+      <p>Social Medias</p>
+    </div>
+  </div>
+  <div class="right hidden-sm hidden-xs">menu</div>
+</div>
+
+
+  </body>
+</html>
