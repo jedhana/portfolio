@@ -75,25 +75,46 @@ li:hover ul {
       border-left: none;
       text-align: left;
     }
+    .lowehalf{
+      top: 80%;
+      left: 4%;
+    }
+    .socialmedia p{
+      bottom: 35%;
+      left: 35px;
+    }
   }
 //PHONE MEDIA QUERIES
   @media screen and (max-width: 767px) {
+    .pageleft{
+      height: 50vh;
+    }
     .pageright{
+      height: 50vh;
+      font-size: 18px !important;
       grid-template-rows: 25% 25% 1fr 1fr;
       grid-template-columns: 100%;
       border-bottom: none !important;
     }
     .upperhalf{
       // TODO position the text
+      top: 11%;
+      left:5%;
+      font-size: 0.7em;
     }
-    .lowehalf{
+    .lowehalf {
       font-size: 1.2em;
+      position: absolute;
+      top: 80%;
+      left: 5%;
+
       // TODO position the text
     }
     .architecture, .coding, .resume, .socialmedia{
       border-bottom: 1px solid rgba(255,255,255,.45);
       border-right: none !important;
       border-left: none !important;
+      color: white;
       // text-align: left;
       font-size: 0.6em;
     }
@@ -133,8 +154,8 @@ li:hover ul {
   p {
   margin: 0px;
   position: absolute;
-  bottom: 35px;
-  left: 35px;
+  bottom: 8%;
+  left: 10%;
   }
   &:hover {
     border: 1px solid rgba(255,255,255,.95);
@@ -155,8 +176,8 @@ li:hover ul {
   p {
   margin: 0px;
   position: absolute;
-  bottom: 35px;
-  left: 35px;
+  bottom: 8%;
+  left: 10%;
   }
   &:hover {
   border: 1px solid rgba(255,255,255,.95);
@@ -193,8 +214,8 @@ li:hover ul {
   p{
   margin: 0px;
   position: absolute;
-  bottom: 35px;
-  left: 35px;
+  bottom: 8%;
+  left: 10%;
   }
   &:hover {
   border: 1px solid rgba(255,255,255,.95);
@@ -207,18 +228,31 @@ li:hover ul {
   .architecture{
     grid-row: 1 / span 1;
     grid-column: 1 /span 1;
+    p {
+      bottom: 45%;
+    }
   }
   .coding{
     grid-row: 2 / span 1;
     grid-column: 1 /span 1;
+    p {
+      bottom: 45%;
+    }
   }
   .resume{
     grid-row: 3 / span 1;
     grid-column: 1 /span 1;
+    p {
+      bottom: 45%;
+    }
   }
   .socialmedia{
     grid-row: 4 / span 1;
     grid-column: 1 /span 1;
+    .icons {
+      bottom: 40%;
+      left: 10%;
+    }
     border-bottom: none;
   }
 }
