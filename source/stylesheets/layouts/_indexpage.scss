@@ -21,14 +21,15 @@ li:hover ul {
 .wrapper {
   background-size: cover;
   background-position: 0px;
-  // display: flex;
+  position: relative;
   padding: 0px;
   margin: 0px;
+  height: 100vh;
 
   .pageleft{
     width: 50%;
     float: left;
-    height: 100vh;
+    height: 100%;
     border-right: 1px solid rgba(255,255,255,.45);
     padding: 0px;
     margin: 0px;
@@ -38,7 +39,7 @@ li:hover ul {
   .pageright {
     width: 42.5%;
     float: left;
-    height:100vh;
+    height:100%;
     border-right: 1px solid rgba(255,255,255,.45);
     display: grid;
       grid-template-rows: 50% 50%;
@@ -48,6 +49,7 @@ li:hover ul {
     width: 7.5%;
     float: left;
     position: relative;
+    height: 100%;
     p {
     font-size: 0.7em;
     font-weight: 100;
@@ -61,7 +63,7 @@ li:hover ul {
     font-weight: 100;
     position:absolute;
     letter-spacing: 4px;
-    top: 18%;
+    top: 6%;
     left: 24px;
     }
   }
@@ -80,7 +82,7 @@ li:hover ul {
       left: 4%;
     }
     .socialmedia p{
-      bottom: 35%;
+      bottom: 20%;
       left: 35px;
     }
   }
