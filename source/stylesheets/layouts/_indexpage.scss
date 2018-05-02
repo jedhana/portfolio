@@ -17,49 +17,43 @@ li:hover ul {
   transition: 0.5s;
 }
 
-/*SEPARATION OF PAGE BELOW  --> TO DO change to GRID layout*/
-.pagess {
+/*SEPARATION OF PAGE BELOW */
+.wrapper {
   background-size: cover;
   background-position: 0px;
-  display: flex;
+  // display: flex;
   padding: 0px;
   margin: 0px;
 
   .pageleft{
-  width: 50%;
-  float: left;
-
-  // @include media($tablet) {
-  //     width : 100%;
-  //   }
-
-  height: 100vh;
-  padding: 0px;
-  margin: 0px;
-  position: relative;
-  }
+    width: 50%;
+    float: left;
+    height: 100vh;
+    border-right: 1px solid rgba(255,255,255,.45);
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    }
 
   .pageright {
     width: 42.5%;
     float: left;
-    // @include media($tablet) {
-    //   width : 100%;
-    // }
+    height:100vh;
     border-right: 1px solid rgba(255,255,255,.45);
     display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 1fr;
+      grid-template-rows: 50% 50%;
+      grid-template-columns: 50% 1fr;
   }
-
   .pageextremeright {
     width: 7.5%;
+    float: left;
     position: relative;
     p {
     font-size: 0.7em;
     font-weight: 100;
     position:absolute;
     letter-spacing: 3px;
-    top: 8%;
+    top: 18%;
     left: 24px;
     }
     li {
@@ -67,8 +61,41 @@ li:hover ul {
     font-weight: 100;
     position:absolute;
     letter-spacing: 4px;
-    top: 8%;
+    top: 18%;
     left: 24px;
+    }
+  }
+// TABLET MEDIA QUERIES
+  @media screen and (max-width: 1200px) {
+    .pageleft, .pageright{
+      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+      height: 50vh;
+      border-bottom: 1px solid rgba(255,255,255,.45);
+      border-right: none;
+      border-left: none;
+      text-align: left;
+    }
+  }
+//PHONE MEDIA QUERIES
+  @media screen and (max-width: 767px) {
+    .pageright{
+      grid-template-rows: 25% 25% 1fr 1fr;
+      grid-template-columns: 100%;
+      border-bottom: none !important;
+    }
+    .upperhalf{
+      // TODO position the text
+    }
+    .lowehalf{
+      font-size: 1.2em;
+      // TODO position the text
+    }
+    .architecture, .coding, .resume, .socialmedia{
+      border-bottom: 1px solid rgba(255,255,255,.45);
+      border-right: none !important;
+      border-left: none !important;
+      // text-align: left;
+      font-size: 0.6em;
     }
   }
 }
@@ -98,7 +125,6 @@ li:hover ul {
   grid-column: 1 /span 1;
   border-bottom: 1px solid rgba(255,255,255,.45);
   border-right: 1px solid rgba(255,255,255,.45);
-  border-left: 1px solid rgba(255,255,255,.45);
   position: relative;
   padding: 0px;
   color: rgba(255,255,255,.65);
@@ -111,11 +137,9 @@ li:hover ul {
   left: 35px;
   }
   &:hover {
-  border-right: 1px solid rgba(255,255,255,.95);
-  border-bottom: 1px solid rgba(255,255,255,.95);
-  border-left: 1px solid rgba(255,255,255,.95);
-  color: rgba(255,255,255,.95);
-  background-color: rgba(10,10,200,.1);
+    border: 1px solid rgba(255,255,255,.95);
+    color: rgba(255,255,255,.95);
+    background-color: rgba(10,10,200,.1);
   }
 }
 
@@ -135,9 +159,7 @@ li:hover ul {
   left: 35px;
   }
   &:hover {
-  border-right: 1px solid rgba(255,255,255,.95);
-  border-bottom: 1px solid rgba(255,255,255,.95);
-  border-left: 1px solid rgba(255,255,255,.95);
+  border: 1px solid rgba(255,255,255,.95);
   color: rgba(255,255,255,.95);
   background-color: rgba(10,10,200,.1);
   }
@@ -163,7 +185,6 @@ li:hover ul {
   grid-row: 2 / span 1;
   grid-column: 1 /span 1;
   border-right: 1px solid rgba(255,255,255,.45);
-  border-left: 1px solid rgba(255,255,255,.45);
   position: relative;
   padding: 0px;
   color: rgba(255,255,255,.65);
@@ -176,14 +197,31 @@ li:hover ul {
   left: 35px;
   }
   &:hover {
-  border-right: 1px solid rgba(255,255,255,.95);
-  border-top: 1px solid rgba(255,255,255,.95);
-  border-left: 1px solid rgba(255,255,255,.95);
+  border: 1px solid rgba(255,255,255,.95);
   color: rgba(255,255,255,.95);
   background-color: rgba(10,10,200,.1);
   }
 }
 
+@media screen and (max-width: 767px) {
+  .architecture{
+    grid-row: 1 / span 1;
+    grid-column: 1 /span 1;
+  }
+  .coding{
+    grid-row: 2 / span 1;
+    grid-column: 1 /span 1;
+  }
+  .resume{
+    grid-row: 3 / span 1;
+    grid-column: 1 /span 1;
+  }
+  .socialmedia{
+    grid-row: 4 / span 1;
+    grid-column: 1 /span 1;
+    border-bottom: none;
+  }
+}
 /*ICONS*/
 .icons {
   margin: 0px;
