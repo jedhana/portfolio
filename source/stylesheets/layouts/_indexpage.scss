@@ -50,22 +50,24 @@ li:hover ul {
     float: left;
     position: relative;
     height: 100%;
-    p {
+  }
+  .menu-dropdown {
     font-size: 0.7em;
     font-weight: 100;
-    position:absolute;
-    letter-spacing: 3px;
-    top: 18%;
-    left: 24px;
-    }
-    li {
-    font-size: 0.7em;
-    font-weight: 100;
-    position:absolute;
+    position: absolute;
     letter-spacing: 4px;
     top: 6%;
+  }
+  .menuu {
+    display: block;
+  }
+
+  #menu-dropdown-1 {
+    right: 24px;
+    display: none;
+  }
+  #menu-dropdown-2 {
     left: 24px;
-    }
   }
 // TABLET MEDIA QUERIES
   @media screen and (max-width: 1200px) {
@@ -77,6 +79,10 @@ li:hover ul {
       border-left: none;
       text-align: left;
     }
+    .upperhalf p{
+      top: 12%;
+      left: 5%;
+    }
     .lowehalf{
       top: 80%;
       left: 4%;
@@ -84,6 +90,12 @@ li:hover ul {
     .socialmedia p{
       bottom: 20%;
       left: 35px;
+    }
+    #menu-dropdown-1 {
+      display: block;
+      top: 15%;
+      right: 4%;
+      font-size: 1em
     }
   }
 //PHONE MEDIA QUERIES
@@ -119,6 +131,15 @@ li:hover ul {
       color: white;
       // text-align: left;
       font-size: 0.6em;
+    }
+    #menu-dropdown-1 {
+      display: block;
+      top: 15%;
+      right: 4%;
+      font-size: 1.2em;
+    }
+    .menuu {
+      display: none;
     }
   }
 }
