@@ -16,8 +16,8 @@
 
    Cheers, hope you enjoy !-->
     <title>JEDHANA</title>
-    <link href="stylesheets/application-ef3b529a.css" rel="stylesheet" />
-    <script src="javascripts/application-5f58cacd.js"></script>
+    <link href="stylesheets/application-2e1afac0.css" rel="stylesheet" />
+    <script src="javascripts/application-21d48f6c.js"></script>
     <link href="images/jdlogo-af4a5bd2.png" rel="icon" type="image/png" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   </head>
@@ -27,23 +27,28 @@
     <div class="pageleft">
       <div class="upperhalf">
         <p class="typed"></p>
+        <li class="menu-dropdown" id="menu-dropdown-1"><a href="" id="menuu">MENU</a>
+          <a href=""><i class="fas fa-bars"></i></a>
+            <ul><a href="">Architecture</a></ul>
+            <ul><a href="">Coding</a></ul>
+            <ul><a href="">Resume</a></ul>
+        </li>
       </div>
       <div class="lowehalf">
         <p>Architect, Developer, <br> Designer</p>
       </div>
     </div>
+
+    <!-- CODES WITH LINKS BELOW -->
     <div class="pageright">
       <div class="architecture">
         <p class="arch">ARCHITECTURE</p>
-
       </div>
-      <div class="coding">
+      <div class="coding" id="codediv">
         <p>CODING</p>
-
       </div>
       <div class="resume">
         <p>RESUME</p>
-
       </div>
       <div class="socialmedia">
         <p class="hidden-xs">
@@ -56,20 +61,46 @@
             <a href="https://www.instagram.com/jedhana/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/jeremy-dhanani-090b0a126/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </div>
-
       </div>
-
     </div>
+
+    <!-- MENU COLUMN BELOW -->
     <div class="pageextremeright hidden-xs hidden-sm">
-      <li>MENU
+      <li class="menu-dropdown" id="menu-dropdown-2">MENU
         <a href=""><i class="fas fa-bars"></i></a>
           <ul><a href="">Architecture</a></ul>
           <ul><a href="">Coding</a></ul>
           <ul><a href="">Resume</a></ul>
       </li>
     </div>
+
   </div>
 
+  <!-- CONTENT FROM LINKS BELOW -->
+  <div class="wrapper-content" style="background: none;">
+
+    <div class="archi-content">
+
+    </div>
+
+    <div id="coding-content">
+      <div class="coding-top_title">
+        <h2>CODING</h2>
+      </div>
+      <div class="coding-top_project">
+        <div class="coding-logo"></div>
+        <div class="coding-description">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="design-content">
+
+    </div>
+  </div>
+
+  <!-- TYPED.JS CODE BELOW -->
   <script>import Typed from 'typed.js'</script>
   <script type="text/javascript">
       var typed = new Typed(".typed", {
