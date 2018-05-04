@@ -1,8 +1,26 @@
 #coding-content {
   display: none;
-
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  overflow: hidden;
+  background-color:rgba(0,0,40,0.99); color: #FFF;
 }
 
 #coding-content.open {
   display: block;
+  height: 100vh;
+  text-align: center;
+  font-weight: 100;
+  padding-top: 30px;
+  letter-spacing: 2px;
+  transition: all 2s ease-in;
+  // transition-duration: 3s;
+
 }
+
+// #coding-content.close {
+//   top: 100vh;
+//   height: 0;
+// }

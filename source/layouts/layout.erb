@@ -17,7 +17,9 @@
    Cheers, hope you enjoy !-->
     <title><%= current_page.data.title %></title>
     <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag "application" %>
+
+    <!-- WHEN PLACED HERE TYPED.JS WORKS -->
+     <!-- <%= javascript_include_tag "application" %> -->
     <%= favicon_tag 'images/jdlogo.png' %>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   </head>
@@ -25,5 +27,7 @@
 
     <%= yield %>
 
+    <!-- WHEN PLACED HERE TYPED.JS DOESNT WORK (but slide up content does) -->
+    <%= javascript_include_tag "application" %>
   </body>
 </html>
