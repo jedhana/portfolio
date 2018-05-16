@@ -60,19 +60,29 @@ title: JEDHANA
     <div class="archi-content">
 
     </div>
-
+    <!-- CODING PROJECTS BELOW -->
     <div id="coding-content">
-      <div class="coding-top_title">
-        <h2>CODING</h2>
+      <div class="back">
+         <a href=""><p>Back to home</p>
+         <i class="fas fa-caret-down"></i></a>
       </div>
+      <div class="coding-top_title">
+        <h2>CODING PROJECTS</h2>
+      </div>
+
       <div class="coding-top_project">
-        <div class="coding-logo"></div>
+      <% data.coding.each do |project| %>
+        <div class="coding-logo">
+          <img src="<%= project.logo %>" style="height:100px;">
+        </div>
         <div class="coding-description">
+          <p><%= project.description %></p>
 
         </div>
+      <% end %>
       </div>
     </div>
-
+    <!-- DESIGN PROJECT BELOW -->
     <div class="design-content">
 
     </div>
